@@ -14,10 +14,10 @@ const Tag = () => {
 
     
 
-    const {gif, fetchData, loading}= useGif();
+    const {gif, fetchData, loading}= useGif(tag);
 
     function clickHandler(){
-        fetchData();
+        fetchData(tag);
     }
     
   return (
